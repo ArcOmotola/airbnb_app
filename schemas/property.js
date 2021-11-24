@@ -75,11 +75,16 @@ export default {
             title: 'Description',
             type: 'string',
         },
+        // {
+        //     name: 'host',
+        //     title: 'host',
+        //     type: 'host',
+        // },
         {
-            name: 'host',
-            title: 'host',
-            type: 'host',
-        },
-        
+            name: 'reviews',
+            title: 'Reviews',
+            type: 'array',
+            of: [{type: 'review'}]
+        }
     ]
 }
